@@ -1,0 +1,13 @@
+iverilog -g2012 -o tb_1loop.vvp tb_1loop.v fetch_unit_with_btb.v
+					//Compile
+vvp tb_1loop.vvp
+					//execute and simulate
+gtkwave tb_1loop.vcd
+					// simulation wave in GTKwave
+
+iverilog -g2012 -o tb_4loops.vvp tb_4loops.v fetch_unit_with_btb.v
+					//Compile
+vvp tb_4loops.vvp
+					//execute and simulate
+gtkwave tb_4loops.vcd
+					// simulation wave in GTKwave
